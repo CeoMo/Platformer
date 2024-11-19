@@ -2,14 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Canvas Boilerplate | Chris Courses</title>
+    <title>Canvas Game | Chris Courses</title>
     <style>
       body {
         margin: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+      canvas {
+        border: 2px solid white;
+      }
+      .controls {
+        margin-top: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
       }
     </style>
   <link rel="icon" href="favicon.ico"></head>
   <body>
     <canvas></canvas>
+    <!-- Control buttons for game functionality -->
+    <div class="controls">
+      <button id="startButton">Start</button>
+      <button id="pauseButton">Pause</button>
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <script src="canvas.js"></script>
   <script src="./js/canvas.bundle.js"></script></body>
 </html>
